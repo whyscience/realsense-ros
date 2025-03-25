@@ -17,7 +17,7 @@
 
 #include <iostream>
 #include <vector>
-#include <rclcpp/rclcpp.hpp>
+#include "ros_node_base.h"
 #include <librealsense2/rs.hpp>
 #include <librealsense2/rsutil.h>
 
@@ -33,6 +33,7 @@ namespace realsense2_camera
     const stream_index_pair INFRA2{RS2_STREAM_INFRARED, 2};
     const stream_index_pair GYRO{RS2_STREAM_GYRO, 0};
     const stream_index_pair ACCEL{RS2_STREAM_ACCEL, 0};
+    const stream_index_pair MOTION{RS2_STREAM_MOTION, 0};
 
     bool isValidCharInName(char c);
 
